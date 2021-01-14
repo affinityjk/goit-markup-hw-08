@@ -1,0 +1,47 @@
+.footer-form {
+  display: flex;
+
+  &.button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+  }
+
+  &-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-white-color);
+  }
+}
+
+.email-input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: var(--primary-white-color);
+  }
+}

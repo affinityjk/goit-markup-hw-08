@@ -1,0 +1,36 @@
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 1600px 600px; */
+  background-position: center;
+  background-color: #2f303a;
+
+  & .container {
+    display: flex;
+    padding: 200px 452px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .hero-text {
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    min-width: 696px;
+    margin-bottom: 23px;
+  }
+}

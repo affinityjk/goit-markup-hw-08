@@ -1,0 +1,23 @@
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+
+  & .contacts {
+    margin-right: 70px;
+  }
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &-center {
+    display: block;
+    width: 206px;
+    margin-right: 93px;
+  }
+}

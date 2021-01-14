@@ -1,0 +1,35 @@
+.logo {
+  color: var(--accent-color);
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  .header & {
+    margin-right: 93px;
+  }
+
+  .contacts & {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &-footer {
+    color: var(--primary-white-color);
+  }
+}
+
+.logo-text {
+  color: var(--secondary-accent-color);
+
+  transition: color 250ms var(--timing-function);
+
+  .site-nav &:hover,
+  .site-nav &:focus {
+    color: var(--accent-color);
+  }
+}
