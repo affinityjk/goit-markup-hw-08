@@ -7,9 +7,16 @@
 }
 
 .team-list.list {
-  display: flex;
-  justify-content: space-between;
   background-color: var(--secondary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .employee-name {
@@ -36,7 +43,7 @@
 }
 
 .team-list-content-wrapper {
-  min-width: 270px;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -46,9 +53,25 @@
 }
 
 .team-list-item {
-  min-width: 270px;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   background-color: var(--secondary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }

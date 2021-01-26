@@ -1,0 +1,54 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: fill 250ms var(--timing-function);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-white-color);
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+}

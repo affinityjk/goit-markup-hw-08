@@ -47,3 +47,7 @@
     fill: var(--primary-white-color);
   }
 }
+
+.social-links-list-item:not(:last-child) {
+  margin-right: 10px;
+}

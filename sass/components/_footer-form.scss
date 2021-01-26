@@ -1,11 +1,22 @@
 .footer-form {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
 
   &.button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
     padding-right: 28px;
+    width: 200px;
   }
 
   &-icon {
@@ -20,14 +31,24 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
-  width: 358px;
+
+  width: 100%;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   outline: none;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 
   &::placeholder {
     font-weight: 400;

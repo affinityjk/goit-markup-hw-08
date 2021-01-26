@@ -11,6 +11,10 @@ body {
   font-family: var(--main-font);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -32,5 +36,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
