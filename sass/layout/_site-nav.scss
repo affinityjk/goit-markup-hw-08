@@ -6,7 +6,9 @@
 
   &.list {
     @media screen and (max-width: 767px) {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 60px;
     }
 
@@ -74,12 +76,13 @@
       background-color: var(--accent-color);
       border-radius: 2px;
 
-      @media screen and (min-width: 1200px){
+      @media screen and (min-width: 1200px) {
         margin-top: 29.5px;
       }
 
       @media screen and (min-width: 1200px) {
         margin-top: -33.5px;
+      }
     }
   }
 }
