@@ -1,20 +1,58 @@
+.header-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &.list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      // margin-left: auto;
+      flex-direction: row;
+    }
+  }
+}
+
 .header-address .link {
-  // display: flex;
-  // align-items: center;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   background-color: var(--primary-white-color);
 
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 
   &:hover,
   &:focus {
@@ -26,6 +64,12 @@
   fill: currentColor;
   margin-right: 10px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+    width: 14px;
+    height: 12px;
+  }
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -36,8 +80,28 @@
   fill: currentColor;
   margin-right: 10px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+}
+
+.header-address-list-item:not(:last-child) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
   }
 }
