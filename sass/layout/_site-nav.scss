@@ -1,11 +1,15 @@
 .site-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  // width: 100%;
+
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
 
   @media screen and (max-width: 767px) {
-    padding: 10px 0;
+    justify-content: space-between;
   }
 
   &.list {
@@ -15,23 +19,10 @@
       align-items: center;
       margin-bottom: 60px;
     }
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-      // justify-content: space-between;
-      margin-right: 84px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 305px;
-    }
   }
 
   &-list-item {
     @media screen and (min-width: 1200px) {
-      // display: flex;
-      // align-items: center;
       position: relative;
     }
   }
